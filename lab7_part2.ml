@@ -71,7 +71,7 @@ Exercise 2A: Extract the red channel of the color named Red, naming
 the result "red_channel".
 ......................................................................*)
 
-let red_channel : int = 0 ;;
+let red_channel : int = Color.red (Color.color_named Color.Red) ;;
 
 (* We hope you'll find the module system quite useful, once you get
 the hang of the conventions.
@@ -96,7 +96,7 @@ compile color.ml and run color.byte.
 
 
 (*......................................................................
-Exercise 2C: 
+Exercise 2C:
 
 In the file "color.ml", modify the implementation of a color module as
 you see fit. Make the design choices that you think would be best for

@@ -169,7 +169,8 @@ list", even though that's the type you used in your implementation.
 
 module type INT_STACK =
   sig
-    exception EmptyStacktype stack
+    exception EmptyStack
+    type stack
     val empty : stack
     val push : int -> stack -> stack
     val top : stack -> int
